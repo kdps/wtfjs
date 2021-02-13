@@ -376,14 +376,15 @@ The rest is obvious, but the `i` is tricky. The `i` in `fail` is grabbed by gene
 More examples:
 
 ```js
-+![]          // -> 0
-+!![]         // -> 1
-!![]          // -> true
-![]           // -> false
-[][[]]        // -> undefined
-+!![] / +![]  // -> Infinity
-[] + {}       // -> "[object Object]"
-+{}           // -> NaN
+"a" + + ! "any words" //  -> a0
++![]                  // -> 0
++!![]                 // -> 1
+!![]                  // -> true
+![]                   // -> false
+[][[]]                // -> undefined
++!![] / +![]          // -> Infinity
+[] + {}               // -> "[object Object]"
++{}                   // -> NaN
 ```
 
 * [Brainfuck beware: JavaScript is after you!](http://patriciopalladino.com/blog/2012/08/09/non-alphanumeric-javascript.html)
